@@ -1,0 +1,15 @@
+.image-dashboard{
+  max-width: 300px;
+  max-height: 300px;
+  justify-content: center;
+  border: 10px;
+}
+.headerPackages{
+  text-align: center;
+  color: darkgreen;
+}
+
+.packageCardTitle{
+  text-align: center;
+  color: darkgreen;
+}

@@ -1,0 +1,24 @@
+<br>
+<br>
+<div>
+  <div class='headerMRP'>
+    <h2>Most Requested Packages</h2>
+  </div>
+  <br>
+  <div *ngFor="let number of [0,1,2,3,4]" class="col-md-4 row">
+    <div class="card border-success">
+      <div class="card-body cardMVP">
+        <h5 class="card-title">Package {{number}}</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <img class="image-dashboard" src="assets/images/image2.jpeg">
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class='text-center'>
+    <button  type="button" class="btn btn-success btn-lg " [routerLink]="['/packages']" >View More Tours <i class="fa fa-hand-pointer-o"></i>
+    </button>
+  </div>
+  <br>
+</div>
+

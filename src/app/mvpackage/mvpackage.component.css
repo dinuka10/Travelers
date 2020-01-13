@@ -1,0 +1,19 @@
+.headerMRP{
+  text-align: center;
+  color: darkgreen;
+}
+
+.image-dashboard{
+  width: 350px;
+  height: 300px;
+  justify-content: center;
+  border: 10px;
+  padding: 1ch;
+}
+
+.row{
+  display: inline-block;
+  padding: 1cm;
+}
+
+
