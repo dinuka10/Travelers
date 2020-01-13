@@ -14,19 +14,19 @@ export class OnePackageComponent implements OnInit {
 
   ngOnInit() {
   }
-  showHide(clickedContainer: string){
+  showHide(clickedContainer: string) {
 
-    if(clickedContainer==='c1'){
+    if (clickedContainer === 'c1') {
       this.isShown1 = true;
       this.isShown2 = false;
       this.isShown3 = false;
     }
-    if(clickedContainer==='c2'){
+    if (clickedContainer === 'c2') {
       this.isShown2 = true;
       this.isShown1 = false;
       this.isShown3 = false;
     }
-    if(clickedContainer==='c3'){
+    if (clickedContainer === 'c3') {
       this.isShown3 = true;
       this.isShown1 = false;
       this.isShown2 = false;
