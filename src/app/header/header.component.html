@@ -1,19 +1,23 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-success">
-  <div class="container col-md-9">
-    <li> <b>Email</b> : {{email}}</li>
-    <li> <b>Hotline</b> : {{hotline}}</li>
+<nav class="navbar navbar-expand-lg navbar-light navbar1 col-sm-12">
+  <div class="container col-sm-9 navbarfont1">
+    <h6> <b>Email</b> : {{email}}</h6>
+    <h6> <b>Hotline</b> : {{hotline}}</h6>
   </div>
 </nav>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-dark">
-    <div class="collapse navbar-collapse col-md-4">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active col-md-6" [routerLink]="['/frontpage']"><font class="white-font">Home</font></a>
-          <a class="nav-item nav-link col-md-6" [routerLink]="['/packages']"><font class="white-font">Package</font></a>
-          <a class="nav-item nav-link col-md-6" [routerLink]="['/blog']"><font class="white-font">Blog</font></a>
+<nav class="navbar navbar-expand-lg navbar-light navbar2 col-sm-12">
+    <div class="collapse navbar-collapse col-sm-12">
+        <div class="navbar-nav col-sm-12">
+          <a class="nav-item nav-link active col-sm-1" [routerLink]="['/frontpage']"><font class="white-font">Home</font></a>
+          <a class="nav-item nav-link col-sm-1" [routerLink]="['/packages']"><font class="white-font">Package</font></a>
+          <a class="nav-item nav-link col-sm-1" [routerLink]="['/blog']"><font class="white-font">Blog</font></a>
+          <a class="nav-item nav-link col-sm-2" [routerLink]="['/blog']"><font class="white-font">About Us</font></a>
+
+          <div class="col-sm-5"></div>
+          <button type="button" class="btn btn-outline-light col-sm-2" [routerLink]="['/inquire']" >
+            Inquire Now
+          </button>
+
         </div>
     </div>
-    <button type="button" class="btn btn-outline-light" [routerLink]="['/inquire']">
-      Inquire Now
-    </button>
 </nav>

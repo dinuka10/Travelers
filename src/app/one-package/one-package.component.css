@@ -1,6 +1,6 @@
 .headerPackages{
   text-align: center;
-  color: darkgreen;
+  color :#271e52;
 }
 .row{
   display: inline-block;
@@ -30,17 +30,6 @@
   padding: 4ch;
 }
 
-#btn1 .btn-primary:hover {
-  color: #fff;
-  background-color:purple; /* new color goes her */
-  border-color: #204d74;
-}
-
-#btn1 .btn-primary.focus, .btn-primary:focus {
-  color:black;
-  background-color:purple; /* new color goes her */
-  border-color: #122b40;
-}
 .image-dashboard{
   width: 200px;
   height: 130px;
@@ -58,4 +47,8 @@
   float:right;
   background-image: url("../../assets/images/image5.jpeg");
   color:yellow;
+}
+
+.btn1{
+  background-color: #204d74;
 }

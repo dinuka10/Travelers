@@ -6,10 +6,15 @@
 }
 .headerPackages{
   text-align: center;
-  color: darkgreen;
+  color: #271e52;
 }
 
 .packageCardTitle{
   text-align: center;
-  color: darkgreen;
+  color: #271e52;
+}
+
+.readMoreBtn{
+  background-color:#271e52;
+  color:white;
 }

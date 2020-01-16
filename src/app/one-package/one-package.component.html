@@ -5,27 +5,27 @@
 </div>
 <br>
 <div class="card-deck container col-md-12" style="align-content: center;" >
-  <div class="card border-success">
+  <div class="card border-primary">
     <div class="card-body">
-      <h5 class="card-title">Duration <i class="fa fa-calendar mr-3"></i></h5>
+      <h5 class="card-title">Duration &nbsp;&nbsp;&nbsp;<i class="fa fa-calendar mr-3" style="font-size: 5ch;"></i></h5>
       <p class="card-text"> 5 Nights 6 Days</p>
     </div>
   </div>
-  <div class="card border-success">
+  <div class="card border-primary">
     <div class="card-body">
-      <h5 class="card-title">Accomodation <i class="fa fa-home mr-3"></i></h5>
+      <h5 class="card-title">Accomodation &nbsp;&nbsp;&nbsp;<i class="fa fa-home mr-3" style="font-size: 5ch;"></i></h5>
       <p class="card-text">Start Class</p>
     </div>
   </div>
-  <div class="card border-success">
+  <div class="card border-primary">
     <div class="card-body">
-      <h5 class="card-title">Meal Plan <i class="fa fa-cutlery mr-3"></i></h5>
+      <h5 class="card-title">Meal Plan &nbsp;&nbsp;&nbsp;<i class="fa fa-cutlery mr-3" style="font-size: 5ch;"></i></h5>
       <p class="card-text">Daily/Breakfast</p>
     </div>
   </div>
-  <div class="card border-success">
+  <div class="card border-primary">
     <div class="card-body">
-      <h5 class="card-title">Transpotation <i class="fa fa-bus mr-3"></i></h5>
+      <h5 class="card-title">Transpotation &nbsp;&nbsp;&nbsp;<i class="fa fa-bus mr-3" style="font-size: 5ch;"></i></h5>
       <p class="card-text">Private/Semi-Luxury</p>
     </div>
   </div>
@@ -34,20 +34,20 @@
 
 <div class='container col-md-10'>
   <div class="divbtn1 row">
-      <button autofocus type="button" class="btn btn-primary btn-lg   btn1" id='btn1' (click)="showHide('c1')" selected >Itinerary</button>
+      <button autofocus type="button" class="btn btn1 btn-lg   btn1" [ngStyle]="{backgroundColor: isShown1==true ?  '#124c8a' : '#3e8bde' }" (click)="showHide('c1')" selected >Itinerary</button>
   </div>
   <div class="divbtn2 row">
-      <button type="button" class="btn btn-primary btn-lg   btn2" id='btn2' (click)="showHide('c2')">Tour Map</button>
+      <button type="button" class="btn  btn-lg btn1  btn2" [ngStyle]="{backgroundColor: isShown2==true ?  '#124c8a' : '#3e8bde' }" (click)="showHide('c2')">Tour Map</button>
   </div>
   <div class="divbtn3 row">
-      <button type="button" class="btn btn-primary btn-lg   btn3" id='btn3' (click)="showHide('c3')">Inclusions & Exclusions</button>
+      <button type="button" class="btn  btn-lg btn1  btn3" [ngStyle]="{backgroundColor: isShown3==true ?  '#124c8a' : '#3e8bde' }"  (click)="showHide('c3')">Inclusions & Exclusions</button>
   </div>
 </div>
 
 <div *ngIf="isShown1" class="container container1 col-md-11" >
   <div class='row1 col-md-5'>
 <div *ngFor="let day of [0,1,2]; let i = index;">
-    <div class="card  border-success" >
+    <div class="card  border-primary" >
         <h5 class="card-header">Day {{i+1}}</h5>
         <div class="card-body">
           <h5 class="card-title">Negambo | Pinnawala | Kandy</h5>

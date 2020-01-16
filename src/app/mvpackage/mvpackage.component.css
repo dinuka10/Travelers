@@ -1,11 +1,11 @@
 .headerMRP{
   text-align: center;
-  color: darkgreen;
+  color: #140d33;
 }
 
 .image-dashboard{
-  width: 350px;
-  height: 300px;
+  max-width: 350px;
+  max-height: 300px;
   justify-content: center;
   border: 10px;
   padding: 1ch;
@@ -16,4 +16,6 @@
   padding: 1cm;
 }
 
-
+.titlefont1{
+  color:#271e52;
+}

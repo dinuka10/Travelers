@@ -5,21 +5,23 @@
 </div>
 <br>
 <div class='container'>
-
-    <div *ngFor="let i of [0,1,2,3,4]" class="card mb-3" style="max-width: 940px;">
+<div *ngFor="let i of [0,1,2,3,4]">
+    <div  class=" shadow card mb-3" style="max-width: 940px;" (mouseover)="hover=true; touch=i" (mouseleave)="hover=false">
         <div class="row no-gutters">
           <div class="col-md-4">
               <img class="image-dashboard" src="assets/images/image2.jpeg">
           </div>
           <div class="col-md-8">
-            <div class="card-body">
+            <div class="card-body" [ngStyle]="{backgroundColor: hover==true && touch==i  ?  'lightgrey' : 'white' }">
               <h5 class="card-title">Card title {{i}} </h5>
               <p class="card-text">It's a broader card with text below as a natural lead-in to extra content. This content is a little longer.</p>
-              <button [routerLink]= "['/package']" class="btn btn-primary">Read More</button>
+              <button [routerLink]= "['/package']" class="btn btn-primary readMoreBtn">Read More</button>
             </div>
           </div>
         </div>
     </div>
+    <br>
+  </div>
 
 
 </div>
